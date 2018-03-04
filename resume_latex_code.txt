@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Meet}{Paija}{
+\href{mailto:meet.paija@gmail.com}{meet.paija@gmail.com} | (+91)8347122132 | (+91)9033431007\\
+{\color{grey}Carrier Objective:}To achieve growth oriented and challenging position in progressive organization where my skills will be utilized in the best way possible.
+
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{DHARMSINH DESAI\\UNIVERSITY, NADIAD}
+\descript{BTech in Computer\\Engineering (Pursuing)}
+\location{2014-2018 | Nadiad, Gujarat}
+\\Current CPI : 7.78/10 (Sem 1-6)
+\sectionsep
+
+\subsection{A B Higher\\Secondary School}
+\descript{}
+\location{2012-2014 | Navsari, Gujarat}\\
+ Percentage: 92   
+ (98\% PCM in SEM-III)
+\sectionsep
+
+\subsection{Sheth H. C. Parekh\\Navsari Highschool}
+\descript{}
+\location{2012 | Navsari, Gujarat}\\
+Percentage: 88
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\descript{Github://\href{https://github.com/meetpaija}{\custombold{meetpaija}}} \\
+\descript{LinkedIn://\href{https://www.linkedin.com/in/meetpaija/}{\custombold{meetpaija}}} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{CourseWork}
+\subsection{Undergraduate}
+\textbullet{} Data Structure 
+\textbullet{} Database Management 
+\textbullet{} Operating Systems 
+\textbullet{} Computer Networks \textbullet{} Computer Organization
+\textbullet{} Compilers
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INTERESTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interest}
+Net Surfing  \textbullet{}  Programming 
+\textbullet{} Product Launching \textbullet{} Big Data Analysis \textbullet{} Listening Music \textbullet{} Travelling \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PERSONAL DETAILS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Personal Details}
+\textbullet{}{\color{blue} Date of Birth:} August 28, 1997.
+\textbullet{}{\color{grey} Languages Known:} English, Hindi, and Gujarati (Vernacular)\\
+\textbullet{}{\color{grey} Permanent Address:} 103, Vaman Apartment, Opposite Swaminarayan
+Temple, Gaurishankar Street, Jalalpore Road,
+Navsari, Gujarat-396445.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    References:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{References}
+\location{ \textbullet{} Mr. Ankur B. Boda}\\
+Trustee and Teacher,\\
+A B Higher Secondary School, Navsari,\\
+Gujarat-396445.\\
+Contact: (+91) 9429868094. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Technical Skills}
+\location{Programming}
+C \textbullet{}  Java  \textbullet{}  Matlab \\
+\location{Web Development}
+ASP.NET \textbullet{} Android Development \textbullet{} PHP \textbullet{} HTML \textbullet{} CSS \\
+\sectionsep
+\subsection{Soft Skills}
+Problem Solving \textbullet{} Decision Making \textbullet{}  TeamWork \textbullet{} Trustworthy \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+
+\subsection{MyRail}
+\location{May-June 2017}
+Language: Android 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Completed Android-based mobile application titled \textbf{“MyRail”} which created completely by my own during summer holidays.
+It provides following facilities: Full route of any train with all details, Train Running Live Status, Fare Enquiry, Seat availability, Find trains between stations,
+Find trains arrive at a particular station, Cancelled trains, Rescheduled trains etc.
+\end{tightemize}
+
+\sectionsep
+
+\subsection{Virtual Wallet}
+\location{January-March 2017}
+Language: Android with Firebase-realtime database
+\begin{tightemize}\item Completed a final year project titled \textbf{“Virtual Wallet”} which basically an Android application, which takes care of our balances virtually.
+It provides following facilities: To transfer the amount and To request the amount via registered number, Generate and Scan QR code for transfer the amount, Chat and pay facility, Show full history of transactions, Profile management, etc.
+Our main goal is to support digital India by doing virtual transactions in our App.
+\end{tightemize}
+\sectionsep
+
+\subsection{Online Shopping System}
+\location{September-October 2016}
+Language: ASP.NET with MsSQL database
+\begin{tightemize}\item  It basically deals with the end user who wants to buy any product with cash on delivery. The system provides following services: Search any product category wise, Buy any product with somewhat discount, Shows recent offers, Cart management, Order management, Payment management, Delivery tracking\end{tightemize}
+\sectionsep
+
+\subsection{Lost and Found}
+\location{February-March 2016}
+Language: PHP with MySQL database
+\begin{tightemize}\item  It deals with the things which found to anyone and things which lost by anyone. System will give the thing to the original user by asking several questions and delete it from database.\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Co-Curriculum Activities} 
+\textbullet{} Won 1st prize in quiz competition which was held by \textbf{“SINCHAN”} group of our society.\\
+\textbullet{} Tracking Experience at Dalhousie, Himachal Pradesh, India. (8 days | Winter)\\
+\textbullet{} I participated in some technical events like “CodeJam”, “The Geek”, gaming event like “FIFA” as well as some central technical event like “Huntronics” in techno-cultural fest of my college.\\
+\sectionsep
+
+
+\end{minipage} 
+\end{document}
